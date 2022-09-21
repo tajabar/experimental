@@ -13,6 +13,14 @@ This example starts a [Telegram](https://telegram.org/) bot on an [ExpressJS](ht
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Ftelegram-bot&envs=TELEGRAM_BOT_TOKEN)
 
+
+### Deploy on Render.com
+* build command: `yarn install; yarn run build-on-render`
+* start command: `yarn start`
+
+The custom build command shouldn't be necessary but it is.  Also render.com temperamentally fails to find `tsc`.  rebuild and it finds it.
+
+
 ## ✨ Features
 
 - Telegraf (library to interact with the Telegram bot API)
