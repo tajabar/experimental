@@ -20,6 +20,8 @@ This example starts a [Telegram](https://telegram.org/) bot on an [ExpressJS](ht
 
 The custom build command shouldn't be necessary but it is.  Also render.com temperamentally fails to find `tsc`.  rebuild and it finds it.
 
+Render.com's zero-downtime deploy process means that when doing a new deploy it'll start a replacement server before stopping your existing one, and you'll have two servers trying to comm for the same bot.  Things will fail.  You can't turn off this process (at time of writing - sep 2022).  Crappy Workaround: Stop the deployed service before deploying a new one.
+
 
 ## ✨ Features
 
